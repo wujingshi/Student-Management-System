@@ -7,7 +7,8 @@ const path = require('path');
 // 创建入口
 const app = express();
 
-
+// 静态文件设置
+app.use(express.static('./statics'));
 
 // 请求、相应
 const accountRouter = require(path.join(__dirname, './routers/accountRouter'));
