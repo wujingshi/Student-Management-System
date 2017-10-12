@@ -11,7 +11,8 @@ const accountRouterCRTL = require(path.join(__dirname, '../controllers/accountRo
 
 // 跳转登录页面
 accountRouter.get('/login', accountRouterCRTL.getLoinPage);
-
+// 图片验证
+accountRouter.get('/vcode', accountRouterCRTL.getVcodeImage);
 
 
 
