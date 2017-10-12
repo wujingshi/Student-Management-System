@@ -13,7 +13,8 @@ const accountRouterCRTL = require(path.join(__dirname, '../controllers/accountRo
 accountRouter.get('/login', accountRouterCRTL.getLoinPage);
 // 图片验证
 accountRouter.get('/vcode', accountRouterCRTL.getVcodeImage);
-
+// 登录模块逻辑处理
+accountRouter.get('/login', accountRouterCRTL.login);
 
 
 // 暴露给入口

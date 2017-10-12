@@ -56,7 +56,26 @@
 <script>
     $('#vcodeimg').on('click', function () {
         $(this).attr('src', '/account/vcode' + "?" + new Date);
-    })
+    });
+
+    function login() {
+        $.post({
+            url: "/account/login",
+            data: {
+                username: $('#usernameId').val(),
+                passwordId: $('#passwordId').val(),
+                vcode: $('#vcodeId').val()
+            },
+            success: function (data) {
+                if (result.status != 0) {
+                    alert(result.message);
+                    $('#vcodeimg').trigger('click');
+                } else {
+                    location.href = "/studentmanager/list"
+                }
+            }
+        })
+    }
 </script>
 
 </html>
