@@ -14,6 +14,7 @@
     "captchapng": "0.0.1",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
+    "gulp": "^3.9.1",
     "mongodb": "^2.2.31",
     "xtemplate": "^4.6.1",
     "xtpl": "^3.3.0"
