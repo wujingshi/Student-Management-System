@@ -15,7 +15,12 @@ accountRouter.get('/login', accountRouterCRTL.getLoinPage);
 accountRouter.get('/vcode', accountRouterCRTL.getVcodeImage);
 // 登录模块逻辑处理
 accountRouter.get('/login', accountRouterCRTL.login);
-
+// 退出操作
+accountRouter.get('/logout', accountRouterCRTL.logout);
+// 获取注册页面
+accountRouter.get('/register', accountRouterCRTL.getRegisterPage);
+// 用户注册
+accountRouter.get('/register', accountRouterCRTL.register);
 
 // 暴露给入口
 module.exports = accountRouter;
